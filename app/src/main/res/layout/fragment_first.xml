@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/sendlo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.FirstFragment">
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="@string/register"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            app:backgroundTint="@null"
+            android:textColor="@color/purple_700"
+            android:background="@drawable/shap_btn"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceButton"
+            tools:ignore="SmallSp" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="@string/login"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            app:backgroundTint="@null"
+            android:textColor="@color/purple_700"
+            android:textAppearance="?attr/textAppearanceButton"
+            android:background="@drawable/shap_btn"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            tools:ignore="SmallSp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="bottom|center"
+            android:text="Design Created By"
+            android:textColor="@color/teal_700"
+            android:textSize="19sp"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:text="Malkinfo"
+            android:gravity="bottom|center"
+            android:layout_marginTop="5dp"
+            android:textSize="19sp"
+            android:layout_marginBottom="0dp"
+            android:textStyle="bold|normal"
+            android:textColor="@color/purple_700"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</layout>

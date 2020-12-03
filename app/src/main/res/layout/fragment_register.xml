@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/log2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.RegisterFragment">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:background="@drawable/shap_btn"
+            android:layout_margin="25dp"
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:layout_margin="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:textStyle="bold|normal"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:id="@+id/etName"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_no"
+            android:layout_margin="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:textStyle="bold|normal"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:id="@+id/etMb"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_margin="15dp"
+            app:errorEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebEmailAddress"
+                android:ems="10"
+                android:textStyle="bold|normal"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:id="@+id/etMail"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:layout_margin="15dp"
+            app:errorEnabled="true"
+            app:endIconMode="password_toggle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebPassword"
+                android:ems="10"
+                android:textStyle="bold|normal"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:id="@+id/etpass"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnres"
+                android:text="@string/login"
+                android:background="@drawable/shap_btn"
+                android:textColor="@color/purple_700"
+                android:layout_margin="10dp"
+                android:padding="7dp"
+                app:backgroundTint="@null"
+                app:rippleColor="@color/teal_700"
+                android:textAppearance="?attr/textAppearanceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btncal"
+                android:text="@string/cancel"
+                android:background="@drawable/shap_btn"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:padding="7dp"
+                android:focusable="true"
+                android:autoSizePresetSizes="12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</layout>
